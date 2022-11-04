@@ -11,10 +11,10 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.MySQL8Dialect
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/test_db
-    username: kodix
-    password: Kodix#2022
+    url: jdbc:mysql://db-abstract-projections:3306/test_db
+    username: test_user
+    password: password@App22
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   application:
-    name: user-service
+    name: abstract-projections
