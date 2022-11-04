@@ -1,6 +1,8 @@
 package com.murethi.abstractprojections.entities;
 
 import lombok.*;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,6 +15,8 @@ import javax.persistence.Id;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@DynamicUpdate
+@DynamicInsert
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
